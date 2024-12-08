@@ -14,7 +14,7 @@ public class MainPage { // Главная страница сайта
     private WebDriver driver;
 
     private By orderButtonUp = By.xpath("//button[@class='Button_Button__ra12g']");  // Локатор кнопки «Заказать» (вверху страницы)
-    private By orderButtonDown = By.className("Button_Middle__1CSJM"); // Локатор кнопки «Заказать» (внизу страницы)
+    private By orderButtonDown = By.xpath("//button[contains(@class, 'Button_Middle__1CSJM') and text()='Заказать']"); // Локатор кнопки «Заказать» (внизу страницы)
 
     public MainPage(WebDriver driver) {
 
